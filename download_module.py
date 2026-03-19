@@ -43,9 +43,10 @@ def download_and_log(url, save_path, latency, model_name, txt_file_path):
 # -------- USAGE --------
 
 download_and_log(
+
     url="",
-    save_path="results/image-to-video/prompt-1/kling-v2-6-pro-freepik.mp4",  # 👈 SAVE AS MP4
-    latency=11183.47  ,  # 👈 IN MILLISECONDS
-    model_name="kling-v2-6-pro-freepik",  # 👈 MODEL NAME
+    save_path="results/image-to-video/prompt-1/seedance-1-5-pro-1080p-freepik.mp4",  # 👈 SAVE AS MP4
+    latency=39309.96   ,  # 👈 IN MILLISECONDS
+    model_name="seedance-1-5-pro-1080p-freepik",  # 👈 MODEL NAME
     txt_file_path="C:/Kanan_Pandit_Rezolve_Ai/WORK-eko-eko/final-model-comp-19Mar/models_wise_data.txt"   # 👈 SAME FILE FOR ALL
 )
