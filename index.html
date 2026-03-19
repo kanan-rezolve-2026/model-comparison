@@ -477,61 +477,310 @@ A glass of water falling from a table and shattering on the floor in slow motion
 
 
 
-
 <!-- ================= METRICS INTERPRETATION ================= -->
 <h2>📊 Metrics Interpretation Guide</h2>
 
-<div class="prompt">
+<style>
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 15px;
+}
 
-<b>Latency (ms / sec):</b><br>
-Lower is better. Measures how fast the model generates output.  
+.metric-card {
+    background: #1e293b;
+    padding: 14px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+    transition: 0.3s;
+}
+
+.metric-card:hover {
+    transform: scale(1.03);
+}
+
+.metric-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.good { border-left-color: #22c55e; }     /* green */
+.bad { border-left-color: #ef4444; }      /* red */
+.neutral { border-left-color: #38bdf8; }  /* blue */
+
+.metric-desc {
+    font-size: 12px;
+    color: #cbd5f5;
+    line-height: 1.5;
+}
+</style>
+
+<div class="metrics-grid">
+
+<div class="metric-card bad">
+<div class="metric-title">⚡ Latency</div>
+<div class="metric-desc">
+Lower is better.<br>
+Measures generation time.<br>
 Fast models are preferred for real-time applications.
+</div>
+</div>
 
-<br><br>
+<div class="metric-card good">
+<div class="metric-title">🎯 CLIP Score</div>
+<div class="metric-desc">
+Higher is better (0–1).<br>
+Measures how well output matches the prompt.<br>
+Higher = better semantic understanding.
+</div>
+</div>
 
-<b>CLIP Score:</b><br>
-Higher is better. Measures how well the generated image/video matches the input prompt.  
-Range: 0 → 1  
-→ Closer to 1 = better semantic alignment.
+<div class="metric-card good">
+<div class="metric-title">✨ Aesthetic Score</div>
+<div class="metric-desc">
+Higher is better.<br>
+Represents visual appeal and realism.<br>
+Higher = more visually pleasing output.
+</div>
+</div>
 
-<br><br>
+<div class="metric-card good">
+<div class="metric-title">🧩 SSIM</div>
+<div class="metric-desc">
+Higher is better (0–1).<br>
+Measures structure similarity with reference image.<br>
+Higher = better preservation.
+</div>
+</div>
 
-<b>FID (Fréchet Inception Distance):</b><br>
-Lower is better. Measures similarity between generated images and real images.  
-→ Lower FID = more realistic outputs.
+<div class="metric-card good">
+<div class="metric-title">📈 PSNR</div>
+<div class="metric-desc">
+Higher is better.<br>
+Measures pixel-level reconstruction quality.<br>
+Used for fine-grained comparison.
+</div>
+</div>
 
-<br><br>
+<div class="metric-card bad">
+<div class="metric-title">🧠 LPIPS</div>
+<div class="metric-desc">
+Lower is better.<br>
+Measures perceptual difference.<br>
+Lower = more visually similar.
+</div>
+</div>
 
-<b>SSIM (Structural Similarity Index):</b><br>
-Higher is better. Measures structural similarity between images.  
-Range: 0 → 1  
-→ Closer to 1 = better quality and structure preservation.
+<div class="metric-card neutral">
+<div class="metric-title">🎬 Motion Score</div>
+<div class="metric-desc">
+Measures movement between frames.<br>
+Moderate = natural motion.<br>
+Very high = unstable video.
+</div>
+</div>
 
-<br><br>
+<div class="metric-card good">
+<div class="metric-title">🔄 Consistency</div>
+<div class="metric-desc">
+Higher is better.<br>
+Measures temporal stability.<br>
+Higher = smoother video.
+</div>
+</div>
 
-<b>Aesthetic Score:</b><br>
-Higher is better. Measures visual appeal and artistic quality.  
-→ Higher score = more visually pleasing output.
+<div class="metric-card good">
+<div class="metric-title">🖼 First Frame SSIM</div>
+<div class="metric-desc">
+Higher is better.<br>
+Checks identity preservation.<br>
+Higher = closer to input image.
+</div>
+</div>
 
-<br><br>
+<div class="metric-card bad">
+<div class="metric-title">🧪 First Frame LPIPS</div>
+<div class="metric-desc">
+Lower is better.<br>
+Measures perceptual similarity to input.<br>
+Lower = better match.
+</div>
+</div>
 
-<b>FVD (Fréchet Video Distance):</b><br>
-Lower is better. Video equivalent of FID.  
-→ Lower FVD = more realistic and coherent videos.
-
-<br><br>
-
-<b>Motion Score:</b><br>
-Higher is better. Measures smoothness and realism of motion in videos.  
-→ Higher = better motion consistency.
-
-<br><br>
-
-<b>Consistency:</b><br>
-Higher is better. Measures temporal consistency (frame-to-frame stability).  
-→ Important for avoiding flickering or identity changes.
+<div class="metric-card neutral">
+<div class="metric-title">📏 Resolution</div>
+<div class="metric-desc">
+Image size (e.g., 1024×1024).<br>
+Higher = more detail.<br>
+Does not always mean better quality.
+</div>
+</div>
 
 </div>
+
+<br>
+
+<div class="prompt" style="border-left:4px solid #22c55e;">
+<b>🏆 How to Choose the Best Model:</b><br><br>
+
+✔ High CLIP → follows prompt<br>
+✔ High Aesthetic → looks good<br>
+✔ High SSIM + Low LPIPS → best edits<br>
+✔ Smooth Motion + High Consistency → best videos<br>
+
+</div>
+
+
+
+<!-- ================= REFERENCES ================= -->
+<h2>📚 Metrics References</h2>
+
+<style>
+.refs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.ref-card {
+    background: #1e293b;
+    padding: 14px;
+    border-radius: 10px;
+    border-left: 4px solid #38bdf8;
+    transition: 0.3s;
+}
+
+.ref-card:hover {
+    transform: scale(1.03);
+}
+
+.ref-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #38bdf8;
+}
+
+.ref-desc {
+    font-size: 12px;
+    color: #cbd5f5;
+    line-height: 1.5;
+}
+
+.ref-link {
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.ref-link a {
+    color: #22c55e;
+    text-decoration: none;
+}
+</style>
+
+<div class="refs">
+
+<div class="ref-card">
+<div class="ref-title">CLIP Score</div>
+<div class="ref-desc">
+Radford et al. (2021) — Learning Transferable Visual Models From Natural Language Supervision
+</div>
+<div class="ref-link">
+<a href="https://arxiv.org/abs/2103.00020" target="_blank">View Paper</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">LPIPS</div>
+<div class="ref-desc">
+Zhang et al. (2018) — The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
+</div>
+<div class="ref-link">
+<a href="https://arxiv.org/abs/1801.03924" target="_blank">View Paper</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">SSIM</div>
+<div class="ref-desc">
+Wang et al. (2004) — Image Quality Assessment: From Error Visibility to Structural Similarity
+</div>
+<div class="ref-link">
+<a href="https://ieeexplore.ieee.org/document/1284395" target="_blank">View Paper</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">PSNR</div>
+<div class="ref-desc">
+Standard signal processing metric for image reconstruction quality
+</div>
+<div class="ref-link">
+<a href="https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio" target="_blank">Learn More</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">Aesthetic Score</div>
+<div class="ref-desc">
+LAION Aesthetic Predictor — trained on human preference datasets
+</div>
+<div class="ref-link">
+<a href="https://github.com/christophschuhmann/improved-aesthetic-predictor" target="_blank">View Repo</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">Video Motion & Consistency</div>
+<div class="ref-desc">
+Fréchet Video Motion Distance (FVMD) — a metric designed to evaluate motion consistency in generated videos using motion features and Fréchet distance.
+</div>
+<div class="ref-link">
+<a href="https://arxiv.org/abs/2407.16124" target="_blank">View Paper</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">Temporal Consistency</div>
+<div class="ref-desc">
+Temporally Consistent Transformers (TECO) — evaluates long-term temporal coherence in generated videos.
+</div>
+<div class="ref-link">
+<a href="https://arxiv.org/abs/2210.02396" target="_blank">View Paper</a>
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">Resolution</div>
+<div class="ref-desc">
+Basic image property indicating pixel dimensions (width × height)
+</div>
+</div>
+
+<div class="ref-card">
+<div class="ref-title">Latency</div>
+<div class="ref-desc">
+System performance metric measuring time taken to generate output
+</div>
+</div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer style="
+    margin-top:50px;
+    padding:15px;
+    text-align:center;
+    background:#020617;
+    color:#94a3b8;
+    font-size:13px;
+    border-top:1px solid #334155;
+">
+    Developed by <span style="color:#38bdf8; font-weight:600;">Kanan Pandit</span>
+</footer>
 
 </body>
 </html>

@@ -1,0 +1,8 @@
+model | file | CLIP | Aesthetic | Resolution
+flux-2-pro-freepik | flux-2-pro-freepik.png | 0.3500 | 6.75 | 1024x768
+flux-2-turbo-freepik | flux-2-turbo-freepik.png | 0.3517 | 6.76 | 1024x1024
+flux-dev-freepik | flux-dev-freepik.png | 0.3182 | 6.59 | 2048x2048
+flux-pro-v1-1-freepik | flux-pro-v1-1-freepik.png | 0.3366 | 6.68 | 1024x1024
+higgsfield-ai-soul-standard | higgsfield-ai-soul-standard.png | 0.3052 | 6.53 | 960x1696
+runway-freepik | runway-freepik.png | 0.3072 | 6.54 | 1024x1024
+seedream-v5-lite-freepik | seedream-v5-lite-freepik.png | 0.3705 | 6.85 | 2048x2048

@@ -1,0 +1,7 @@
+model | file | CLIP | Motion | Consistency | FirstFrame_SSIM | FirstFrame_LPIPS
+kling-v2-6-pro-freepik | kling-v2-6-pro-freepik.mp4 | 0.1803 | 9.78 | 0.0928 | 0.9530 | 0.0206
+kling-v3-pro-freepik | kling-v3-pro-freepik.mp4 | 0.3295 | 9.02 | 0.0998 | 0.1065 | 0.7100
+ltx-2-pro-freepik | ltx-2-pro-freepik.mp4 | 0.2256 | 23.17 | 0.0414 | 0.3463 | 0.4711
+minimax-hailuo-2-3-1080p-freepik | minimax-hailuo-2-3-1080p-freepik.mp4 | 0.3430 | 1.76 | 0.3622 | 0.1243 | 0.6726
+runway-gen4-turbo-freepik | runway-gen4-turbo-freepik.mp4 | 0.2411 | 3.84 | 0.2067 | 0.3442 | 0.4822
+wan-v2-6-1080p-freepik | wan-v2-6-1080p-freepik.mp4 | 0.2999 | 6.20 | 0.1388 | 0.6214 | 0.0991

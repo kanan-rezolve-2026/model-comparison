@@ -1,0 +1,6 @@
+model | file | CLIP | SSIM | PSNR | LPIPS | Resolution
+flux-kontext-pro-freepik | flux-kontext-pro-freepik.png | 0.2388 | 0.1477 | 27.97 | 0.4662 | 1024x1024
+higgsfield-ai-soul-reference | higgsfield-ai-soul-reference.png | 0.2941 | 0.0990 | 28.01 | 0.7983 | 2048x2048
+seedream-v4-5-edit-freepik | seedream-v4-5-edit-freepik.png | 0.2625 | 0.1364 | 27.96 | 0.6042 | 2048x2048
+seedream-v4-edit-freepik | seedream-v4-edit-freepik.png | 0.2696 | 0.0771 | 27.89 | 0.5876 | 2048x2048
+seedream-v5-lite-edit-freepik | seedream-v5-lite-edit-freepik.png | 0.2563 | 0.0880 | 27.94 | 0.7879 | 2048x2048

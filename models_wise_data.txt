@@ -34,7 +34,7 @@ seedream-v4-edit-freepik | seedream-v4-edit-freepik.png | 17986.4 sec
 seedream-v4-5-edit-freepik | seedream-v4-5-edit-freepik.png | 28321.02 sec
 seedream-v5-lite-edit-freepik | seedream-v5-lite-edit-freepik.png | 35315.2 sec
 flux-kontext-pro-freepik | flux-kontext-pro-freepik.png | 11183.47 sec
-higgsfield-ai-soul-reference | higgsfield-ai-soul-reference.png | 11183.47 sec
+higgsfield-ai-soul-reference | higgsfield-ai-soul-reference.png | 30451.25 sec
 
 
 
