@@ -1,0 +1,54 @@
+##all sec are in milisecond
+
+
+##For prompt to image: 
+A cinematic portrait of a young man sitting in a dimly lit café at night, soft warm lighting from a table lamp illuminating his face, rain visible through the window behind him, shallow depth of field, reflections on glass, shot on a 50mm lens, ultra realistic skin texture, natural imperfections, detailed background, bokeh lights, 4K
+
+flux-2-pro-freepik | flux-2-pro-freepik.jpg | 12326.27 sec
+flux-2-turbo-freepik | flux-2-turbo-freepik.png | 5237.08 sec
+flux-dev-freepik | flux-dev-freepik.png | 7652.18 sec
+flux-pro-v1-1-freepik | flux-pro-v1-1-freepik.png | 11585.55 sec
+seedream-v5-lite-freepik | seedream-v5-lite-freepik.png | 33507.36 sec
+runway-freepik | runway-freepik.png | 57564.5 sec
+higgsfield-ai/soul/standard | higgsfield-ai-soul-standard.png | 14020.38 sec
+
+
+
+
+
+Style Transfer Test for edit(prompt-1): 
+Transform the image into a cinematic style with dramatic lighting, teal and orange color grading, and shallow depth of field. Keep the subject’s identity unchanged.
+
+
+seedream-v4-edit-freepik | seedream-v4-edit-freepik.png | 18017.92 sec
+seedream-v5-edit-freepik | seedream-v4-5-edit-freepik.png | 21319.77 sec
+seedream-v5-lite-edit-freepik | seedream-v5-lite-edit-freepik.png | 34665.35 sec
+flux-kontext-pro-freepik | flux-kontext-pro-freepik.png | 11417.6 sec
+higgsfield-ai-soul-reference | higgsfield-ai-soul-reference.png | 31203.84 sec
+
+
+Edit (Background Replacement)(promt-2):
+ Replace the background with a sunset beach scene with soft golden lighting. Match the lighting direction and color temperature on the subject so it looks natural.
+
+seedream-v4-edit-freepik | seedream-v4-edit-freepik.png | 17986.4 sec
+seedream-v4-5-edit-freepik | seedream-v4-5-edit-freepik.png | 28321.02 sec
+seedream-v5-lite-edit-freepik | seedream-v5-lite-edit-freepik.png | 35315.2 sec
+flux-kontext-pro-freepik | flux-kontext-pro-freepik.png | 11183.47 sec
+higgsfield-ai-soul-reference | higgsfield-ai-soul-reference.png | 11183.47 sec
+
+
+
+
+
+Video (Generation)(promt-1): 
+ A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit, smooth transition, cinematic lighting
+
+
+
+
+Video (Generation)(prompt-2): 
+A glass of water falling from a table and shattering on the floor in slow motion, realistic physics, detailed water splashes, cinematic lighting
+
+
+
+

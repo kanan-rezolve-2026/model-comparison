@@ -1,0 +1,85 @@
+PROMPT_TO_IMAGE_MODELS: list[dict[str, Any]] = [
+   1) {"label": "flux-2-pro (freepik)", "provider": "freepik", "kind": "image", "id": "flux-2-pro"},
+status=COMPLETED | task_id=97f698fc-fbd8-4ab1-8030-d05a43840e8a | response_time_ms=11209.46 | timestamp_utc=2026-03-19T12:14:16.260250+00:00
+
+
+image_urls: https://bfldeliveryprodeu4.blob.core.windows.net/results/2026/03/19/509e4532d2f3424ca6751877338302d2_sample.jpeg?se=2026-03-19T12%3A24%3A25Z&sp=r&sv=2024-11-04&sr=b&rsct=image/jpeg&sig=BgeOkIFnJgV3LYxZrTQ0ot5K8WLRPYRj4FNrZj79gAM%3D
+
+
+
+
+    2){"label": "flux-2-turbo (freepik)", "provider": "freepik", "kind": "image", "id": "flux-2-turbo"},
+status=COMPLETED | task_id=c464dc7f-7974-445e-9eb3-5e98b530a723 | response_time_ms=4317.48 | timestamp_utc=2026-03-19T12:02:17.309270+00:00
+
+
+image_urls: https://v3b.fal.media/files/b/0a92ca2e/CXOIK5_Jo9QVFZPCex6gN_GPPxcQUQ.png
+
+
+
+
+
+    3){"label": "flux-dev (freepik)", "provider": "freepik", "kind": "image", "id": "flux-dev"},
+
+status=COMPLETED | task_id=b0fa5847-0952-4185-a0aa-3fdd9c306cc0 | response_time_ms=7736.49 | timestamp_utc=2026-03-19T12:03:58.415890+00:00
+
+image_urls: https://cdn-magnific.freepik.com/result_FLUX_DEV_b0fa5847-0952-4185-a0aa-3fdd9c306cc0_0.png?token=exp=1773925443~hmac=74b45f8f683e9ffa1a49931bf3f1bd923f3558c5e25943e03dd0ae06bc7c483b&size=stable
+
+
+
+
+
+
+
+    4){"label": "flux-pro-v1-1 (freepik)", "provider": "freepik", "kind": "image", "id": "flux-pro-v1-1"},
+
+status=COMPLETED | task_id=0d15b6dd-3f36-4761-bf76-2a8094b60f84 | response_time_ms=11553.65 | timestamp_utc=2026-03-19T12:08:03.502517+00:00
+
+image_urls: https://delivery.eu2.bfl.ai/results/f7/0885500baf263f/0baf263f70e64c1ea8d76972a6012e00/sample.jpeg?se=2026-03-19T12%3A18%3A13Z&sp=r&sv=2024-11-04&sr=b&rsct=image/jpeg&sig=T9F6wFWPEYQMpzFklanBCkGexkRnCtxySERy%2BRomAzw%3D
+
+
+
+
+
+   5) {"label": "seedream-v5-lite (freepik)", "provider": "freepik", "kind": "image", "id": "seedream-v5-lite"},
+
+status=COMPLETED | task_id=77519c98-20f0-4bbb-a742-68f21c4f1de2 | response_time_ms=32581.84 | timestamp_utc=2026-03-19T12:09:04.563126+00:00
+
+image_urls: https://cdn-magnific.freepik.com/result_SEEDREAM_5_0_77519c98-20f0-4bbb-a742-68f21c4f1de2_0.jpeg?token=exp=1773925774~hmac=e616dc4d6d71eb423eb9354b1bbfebe51c73e4d7b123986bccc93a799d2309ae&size=stable
+
+
+
+
+
+
+
+
+
+
+
+
+   6) {"label": "runway (freepik)", "provider": "freepik", "kind": "image", "id": "runway"},
+    7){"label": "higgsfield-ai/soul/standard (higgsfield)", "provider": "higgsfield", "kind": "image", "id": "higgsfield-ai/soul/standard"},
+]
+
+
+
+ 
+IMAGE_TO_VIDEO_MODELS: list[dict[str, Any]] = [
+    1){"label": "kling-v2-6-pro (freepik)", "provider": "freepik", "kind": "video", "id": "kling-v2-6-pro"},
+    {"label": "kling-v3-pro (freepik, preferred upgrade)", "provider": "freepik", "kind": "video", "id": "kling-v3-pro"},
+    {"label": "runway-gen4-turbo (freepik)", "provider": "freepik", "kind": "video", "id": "runway-gen4-turbo"},
+    {"label": "minimax-hailuo-2-3-1080p (freepik)", "provider": "freepik", "kind": "video", "id": "minimax-hailuo-2-3-1080p"},
+    {"label": "ltx-2-pro (freepik)", "provider": "freepik", "kind": "video", "id": "ltx-2-pro"},
+    {"label": "wan-v2-6-1080p (freepik)", "provider": "freepik", "kind": "video", "id": "wan-v2-6-1080p"},
+    {"label": "seedance-1-5-pro-1080p (freepik)", "provider": "freepik", "kind": "video", "id": "seedance-1-5-pro-1080p"},
+]
+ 
+EDIT_MODELS: list[dict[str, Any]] = [
+    {"label": "seedream-v4-edit (freepik)", "provider": "freepik", "kind": "image", "id": "seedream-v4-edit", "needs_image": True},
+    {"label": "seedream-v4-5-edit (freepik)", "provider": "freepik", "kind": "image", "id": "seedream-v4-5-edit", "needs_image": True},
+    {"label": "seedream-v5-lite-edit (freepik)", "provider": "freepik", "kind": "image", "id": "seedream-v5-lite-edit", "needs_image": True},
+    {"label": "gpt-1.5 (freepik)", "provider": "freepik", "kind": "image", "id": "gpt-1.5", "needs_image": True},
+    {"label": "gpt-1.5-high (freepik)", "provider": "freepik", "kind": "image", "id": "gpt-1.5-high", "needs_image": True},
+    {"label": "flux-kontext-pro (freepik)", "provider": "freepik", "kind": "image", "id": "flux-kontext-pro", "needs_image": True},
+    {"label": "higgsfield-ai/soul/reference (higgsfield)", "provider": "higgsfield", "kind": "image", "id": "higgsfield-ai/soul/reference", "needs_image": True},
+]

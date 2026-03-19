@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🚀 Model Comparison Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 { text-align: center; }
+
+        h2 {
+            border-bottom: 2px solid #334155;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .prompt {
+            background: #1e293b;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 10px 0 20px 0;
+
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        img, video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .model {
+            margin-top: 6px;
+            font-size: 13px;
+            color: #38bdf8;
+        }
+
+        .metrics {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #cbd5f5;
+            text-align: left;
+        }
+
+        .ref {
+            border: 2px dashed #38bdf8;
+        }
+
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🚀 Model Output Comparison Dashboard</h1>
+
+<!-- ================= PROMPT TO IMAGE ================= -->
+<h2>Prompt → Image</h2>
+
+<div class="prompt">
+<details open>
+<summary>View Prompt</summary>
+A cinematic portrait of a young man sitting in a dimly lit café at night, soft warm lighting from a table lamp illuminating his face, rain visible through the window behind him, shallow depth of field, reflections on glass, shot on a 50mm lens, ultra realistic skin texture, natural imperfections, detailed background, bokeh lights, 4K
+</details>
+</div>
+
+<div class="grid">
+
+    <div class="card">
+        <img src="results/prompt-to-image/flux-2-pro-freepik.png">
+        <div class="model">flux-2-pro-freepik</div>
+        <div class="metrics">
+            Latency: 12.3s <br> CLIP: 0.85 <br> FID: 12.5 <br> SSIM: 0.78 <br> Aesthetic: 7.9
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="results/prompt-to-image/flux-2-turbo-freepik.png">
+        <div class="model">flux-2-turbo-freepik</div>
+        <div class="metrics">
+            Latency: 5.2s <br> CLIP: 0.82 <br> FID: 14.2 <br> SSIM: 0.75 <br> Aesthetic: 7.5
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/prompt-to-image/flux-dev-freepik.png">
+        <div class="model">flux-dev-freepik</div>
+        <div class="metrics">
+            Latency: 5.2s <br> CLIP: 0.82 <br> FID: 14.2 <br> SSIM: 0.75 <br> Aesthetic: 7.5
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="results/prompt-to-image/flux-pro-v1-1-freepik.png">
+        <div class="model">flux-pro-v1-1-freepik</div>
+        <div class="metrics">
+            Latency: 5.2s <br> CLIP: 0.82 <br> FID: 14.2 <br> SSIM: 0.75 <br> Aesthetic: 7.5
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="results/prompt-to-image/seedream-v5-lite-freepik.png">
+        <div class="model">seedream-v5-lite-freepik</div>
+        <div class="metrics">
+            Latency: 5.2s <br> CLIP: 0.82 <br> FID: 14.2 <br> SSIM: 0.75 <br> Aesthetic: 7.5
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="results/prompt-to-image/runway-freepik.png">
+        <div class="model">runway-freepik</div>
+        <div class="metrics">
+            Latency: 5.2s <br> CLIP: 0.82 <br> FID: 14.2 <br> SSIM: 0.75 <br> Aesthetic: 7.5
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/prompt-to-image/higgsfield-ai-soul-standard.png">
+        <div class="model">higgsfield-ai-soul-standard</div>
+        <div class="metrics">
+            Latency: 5.2s <br> CLIP: 0.82 <br> FID: 14.2 <br> SSIM: 0.75 <br> Aesthetic: 7.5
+        </div>
+    </div>
+
+
+</div>
+
+<!-- ================= EDIT PROMPT 1 ================= -->
+<h2>Edit (Prompt 1 - Style Transfer)</h2>
+
+<div class="prompt">
+<details>
+<summary>View Prompt</summary>
+Transform the image into a cinematic style with dramatic lighting, teal and orange color grading, and shallow depth of field. Keep the subject’s identity unchanged.
+</details>
+</div>
+
+<div class="grid">
+
+    <div class="card ref">
+        <img src="results/edit/prompt-1/input_reference.png">
+        <div class="model">Reference Input</div>
+    </div>
+
+    <div class="card">
+        <img src="results/edit/prompt-1/seedream-v4-edit-freepik.png">
+        <div class="model">seedream-v4-edit</div>
+        <div class="metrics">
+            Latency: 18.0s <br> CLIP: 0.80 <br> FID: 13.5 <br> SSIM: 0.82 <br> Aesthetic: 8.1
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-1/seedream-v4-5-edit-freepik.png">
+        <div class="model">seedream-v4-5-edit</div>
+        <div class="metrics">
+            Latency: 18.0s <br> CLIP: 0.80 <br> FID: 13.5 <br> SSIM: 0.82 <br> Aesthetic: 8.1
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-1/seedream-v5-lite-edit-freepik.png">
+        <div class="model">seedream-v5-lite-edit</div>
+        <div class="metrics">
+            Latency: 18.0s <br> CLIP: 0.80 <br> FID: 13.5 <br> SSIM: 0.82 <br> Aesthetic: 8.1
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-1/flux-kontext-pro-freepik.png">
+        <div class="model">flux-kontext-pro-freepik</div>
+        <div class="metrics">
+            Latency: 18.0s <br> CLIP: 0.80 <br> FID: 13.5 <br> SSIM: 0.82 <br> Aesthetic: 8.1
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="results/edit/prompt-1/higgsfield-ai-soul-reference.png">
+        <div class="model">higgsfield-ai-soul-reference</div>
+        <div class="metrics">
+            Latency: 18.0s <br> CLIP: 0.80 <br> FID: 13.5 <br> SSIM: 0.82 <br> Aesthetic: 8.1
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= EDIT PROMPT 2 ================= -->
+<h2>Edit (Prompt 2 - Background Replace)</h2>
+
+<div class="prompt">
+<details>
+<summary>View Prompt</summary>
+Replace the background with a sunset beach scene with soft golden lighting. Match the lighting direction and color temperature on the subject so it looks natural.
+</details>
+</div>
+
+<div class="grid">
+
+    <div class="card ref">
+        <img src="results/edit/prompt-2/input_reference.png">
+        <div class="model">Reference Input</div>
+    </div>
+
+    <div class="card">
+        <img src="results/edit/prompt-2/seedream-v4-edit-freepik.png">
+        <div class="model">seedream-v4-edit</div>
+        <div class="metrics">
+            Latency: 17.9s <br> CLIP: 0.81 <br> FID: 13.2 <br> SSIM: 0.83 <br> Aesthetic: 8.0
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-2/seedream-v4-5-edit-freepik.png">
+        <div class="model">seedream-v4-5-edit</div>
+        <div class="metrics">
+            Latency: 17.9s <br> CLIP: 0.81 <br> FID: 13.2 <br> SSIM: 0.83 <br> Aesthetic: 8.0
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-2/seedream-v5-lite-edit-freepik.png">
+        <div class="model">seedream-v5-lite-edit</div>
+        <div class="metrics">
+            Latency: 17.9s <br> CLIP: 0.81 <br> FID: 13.2 <br> SSIM: 0.83 <br> Aesthetic: 8.0
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-2/flux-kontext-pro-freepik.png">
+        <div class="model">flux-kontext-pro-freepik</div>
+        <div class="metrics">
+            Latency: 17.9s <br> CLIP: 0.81 <br> FID: 13.2 <br> SSIM: 0.83 <br> Aesthetic: 8.0
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <img src="results/edit/prompt-2/higgsfield-ai-soul-reference.png">
+        <div class="model">higgsfield-ai-soul-reference</div>
+        <div class="metrics">
+            Latency: 17.9s <br> CLIP: 0.81 <br> FID: 13.2 <br> SSIM: 0.83 <br> Aesthetic: 8.0
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= VIDEO PROMPT 1 ================= -->
+<h2>Image → Video (Prompt 1)</h2>
+
+<div class="prompt">
+<details>
+<summary>View Prompt</summary>
+A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit, smooth transition, cinematic lighting
+</details>
+</div>
+
+<div class="grid">
+
+
+    
+    <div class="card ref">
+        <img src="results/edit/prompt-2/input_reference.png">
+        <div class="model">Reference Input</div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+
+    
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+    
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-1/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 25.3s <br> CLIP: 0.76 <br> Motion: 0.82 <br> FVD: 120 <br> Consistency: 0.78
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+<!-- ================= VIDEO PROMPT 2 ================= -->
+<h2>Image → Video (Prompt 2)</h2>
+
+<div class="prompt">
+<details>
+<summary>View Prompt</summary>
+A glass of water falling from a table and shattering on the floor in slow motion, realistic physics, detailed water splashes, cinematic lighting
+</details>
+</div>
+
+<div class="grid">
+
+    <div class="card ref">
+        <img src="results/edit/prompt-2/input_reference.png">
+        <div class="model">Reference Input</div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+    <div class="card">
+        <video controls>
+            <source src="results/image-to-video/prompt-2/video1.mp4">
+        </video>
+        <div class="model">model-name</div>
+        <div class="metrics">
+            Latency: 30.1s <br> CLIP: 0.79 <br> Motion: 0.85 <br> FVD: 110 <br> Consistency: 0.80
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!-- ================= METRICS INTERPRETATION ================= -->
+<h2>📊 Metrics Interpretation Guide</h2>
+
+<div class="prompt">
+
+<b>Latency (ms / sec):</b><br>
+Lower is better. Measures how fast the model generates output.  
+Fast models are preferred for real-time applications.
+
+<br><br>
+
+<b>CLIP Score:</b><br>
+Higher is better. Measures how well the generated image/video matches the input prompt.  
+Range: 0 → 1  
+→ Closer to 1 = better semantic alignment.
+
+<br><br>
+
+<b>FID (Fréchet Inception Distance):</b><br>
+Lower is better. Measures similarity between generated images and real images.  
+→ Lower FID = more realistic outputs.
+
+<br><br>
+
+<b>SSIM (Structural Similarity Index):</b><br>
+Higher is better. Measures structural similarity between images.  
+Range: 0 → 1  
+→ Closer to 1 = better quality and structure preservation.
+
+<br><br>
+
+<b>Aesthetic Score:</b><br>
+Higher is better. Measures visual appeal and artistic quality.  
+→ Higher score = more visually pleasing output.
+
+<br><br>
+
+<b>FVD (Fréchet Video Distance):</b><br>
+Lower is better. Video equivalent of FID.  
+→ Lower FVD = more realistic and coherent videos.
+
+<br><br>
+
+<b>Motion Score:</b><br>
+Higher is better. Measures smoothness and realism of motion in videos.  
+→ Higher = better motion consistency.
+
+<br><br>
+
+<b>Consistency:</b><br>
+Higher is better. Measures temporal consistency (frame-to-frame stability).  
+→ Important for avoiding flickering or identity changes.
+
+</div>
+
+</body>
+</html>
