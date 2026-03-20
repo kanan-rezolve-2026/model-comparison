@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>🚀 Model Comparison Dashboard</title>
 
@@ -11,7 +12,9 @@
             padding: 20px;
         }
 
-        h1 { text-align: center; }
+        h1 {
+            text-align: center;
+        }
 
         h2 {
             border-bottom: 2px solid #334155;
@@ -48,7 +51,8 @@
             transform: scale(1.03);
         }
 
-        img, video {
+        img,
+        video {
             width: 100%;
             border-radius: 8px;
         }
@@ -80,697 +84,734 @@
 
 <body>
 
-<h1>🚀 Model Output Comparison Dashboard</h1>
+    <h1>🚀 Model Output Comparison Dashboard</h1>
 
-<!-- ================= PROMPT TO IMAGE ================= -->
-<h2>Prompt → Image</h2>
+    <!-- ================= PROMPT TO IMAGE ================= -->
+    <h2>Prompt → Image</h2>
 
-<div class="prompt">
-<details open>
-<summary>View Prompt</summary>
-A cinematic portrait of a young man sitting in a dimly lit café at night, soft warm lighting from a table lamp illuminating his face, rain visible through the window behind him, shallow depth of field, reflections on glass, shot on a 50mm lens, ultra realistic skin texture, natural imperfections, detailed background, bokeh lights, 4K
-</details>
-</div>
+    <div class="prompt">
+        <details open>
+            <summary>View Prompt</summary>
+            A cinematic portrait of a young man sitting in a dimly lit café at night, soft warm lighting from a table
+            lamp illuminating his face, rain visible through the window behind him, shallow depth of field, reflections
+            on glass, shot on a 50mm lens, ultra realistic skin texture, natural imperfections, detailed background,
+            bokeh lights, 4K
+        </details>
+    </div>
 
-<div class="grid">
+    <div class="grid">
 
-    <div class="card">
-        <img src="results/prompt-to-image/flux-2-pro-freepik.png">
-        <div class="model">flux-2-pro-freepik</div>
-        <div class="metrics">
-            Latency: 12.3s <br> CLIP: 0.3500 <br> Aesthetic: 6.75 <br> Resolution: 1024x768
+        <div class="card">
+            <img src="results/prompt-to-image/flux-2-pro-freepik.png">
+            <div class="model">flux-2-pro-freepik</div>
+            <div class="metrics">
+                Latency: 12.3s <br> CLIP: 0.3500 <br> Aesthetic: 6.75 <br> Resolution: 1024x768
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <img src="results/prompt-to-image/flux-2-turbo-freepik.png">
-        <div class="model">flux-2-turbo-freepik</div>
-        <div class="metrics">
-            Latency: 5.2s <br> CLIP: 0.3517 <br> Aesthetic: 6.76 <br> Resolution: 1014x1024
+        <div class="card">
+            <img src="results/prompt-to-image/flux-2-turbo-freepik.png">
+            <div class="model">flux-2-turbo-freepik</div>
+            <div class="metrics">
+                Latency: 5.2s <br> CLIP: 0.3517 <br> Aesthetic: 6.76 <br> Resolution: 1014x1024
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/prompt-to-image/flux-dev-freepik.png">
-        <div class="model">flux-dev-freepik</div>
-        <div class="metrics">
-            Latency: 7.6s <br> CLIP: 0.3182 <br> Aesthetic: 6.59 <br> Resolution: 2048x2048
+
+        <div class="card">
+            <img src="results/prompt-to-image/flux-dev-freepik.png">
+            <div class="model">flux-dev-freepik</div>
+            <div class="metrics">
+                Latency: 7.6s <br> CLIP: 0.3182 <br> Aesthetic: 6.59 <br> Resolution: 2048x2048
+            </div>
         </div>
-    </div>
-    
-    <div class="card">
-        <img src="results/prompt-to-image/flux-pro-v1-1-freepik.png">
-        <div class="model">flux-pro-v1-1-freepik</div>
-        <div class="metrics">
-            Latency: 11.6s <br> CLIP: 0.3366 <br> Aesthetic: 6.68 <br> Resolution: 1024x1024
+
+        <div class="card">
+            <img src="results/prompt-to-image/flux-pro-v1-1-freepik.png">
+            <div class="model">flux-pro-v1-1-freepik</div>
+            <div class="metrics">
+                Latency: 11.6s <br> CLIP: 0.3366 <br> Aesthetic: 6.68 <br> Resolution: 1024x1024
+            </div>
         </div>
-    </div>
-    
-    <div class="card">
-        <img src="results/prompt-to-image/seedream-v5-lite-freepik.png">
-        <div class="model">seedream-v5-lite-freepik</div>
-        <div class="metrics">
-            Latency: 33.5s <br> CLIP: 0.3705 <br> Aesthetic: 6.85 <br> Resolution: 2048x2048
+
+        <div class="card">
+            <img src="results/prompt-to-image/seedream-v5-lite-freepik.png">
+            <div class="model">seedream-v5-lite-freepik</div>
+            <div class="metrics">
+                Latency: 33.5s <br> CLIP: 0.3705 <br> Aesthetic: 6.85 <br> Resolution: 2048x2048
+            </div>
         </div>
-    </div>
-    
-    <div class="card">
-        <img src="results/prompt-to-image/runway-freepik.png">
-        <div class="model">runway-freepik</div>
-        <div class="metrics">
-            Latency: 5.7s <br> CLIP: 0.3072 <br> Aesthetic: 6.54 <br> Resolution: 1024x1024
+
+        <div class="card">
+            <img src="results/prompt-to-image/runway-freepik.png">
+            <div class="model">runway-freepik</div>
+            <div class="metrics">
+                Latency: 5.7s <br> CLIP: 0.3072 <br> Aesthetic: 6.54 <br> Resolution: 1024x1024
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/prompt-to-image/higgsfield-ai-soul-standard.png">
-        <div class="model">higgsfield-ai-soul-standard</div>
-        <div class="metrics">
-            Latency: 14s <br> CLIP: 0.3052 <br> Aesthetic: 6.53 <br> Resolution: 960x1696
+
+        <div class="card">
+            <img src="results/prompt-to-image/higgsfield-ai-soul-standard.png">
+            <div class="model">higgsfield-ai-soul-standard</div>
+            <div class="metrics">
+                Latency: 14s <br> CLIP: 0.3052 <br> Aesthetic: 6.53 <br> Resolution: 960x1696
+            </div>
         </div>
+
+
     </div>
 
+    <!-- ================= EDIT PROMPT 1 ================= -->
+    <h2>Edit (Prompt 1 - Style Transfer)</h2>
 
-</div>
-
-<!-- ================= EDIT PROMPT 1 ================= -->
-<h2>Edit (Prompt 1 - Style Transfer)</h2>
-
-<div class="prompt">
-<details>
-<summary>View Prompt</summary>
-Transform the image into a cinematic style with dramatic lighting, teal and orange color grading, and shallow depth of field. Keep the subject’s identity unchanged.
-</details>
-</div>
-
-<div class="grid">
-
-    <div class="card ref">
-        <img src="results/edit/prompt-1/input_reference.png">
-        <div class="model">Reference Input</div>
+    <div class="prompt">
+        <details>
+            <summary>View Prompt</summary>
+            Transform the image into a cinematic style with dramatic lighting, teal and orange color grading, and
+            shallow depth of field. Keep the subject’s identity unchanged.
+        </details>
     </div>
 
-    <div class="card">
-        <img src="results/edit/prompt-1/seedream-v4-edit-freepik.png">
-        <div class="model">seedream-v4-edit</div>
-        <div class="metrics">
-            Latency: 18.0s <br> CLIP: 0.2696 <br> SSIM: 0.0771 <br> PSNR: 27.89 <br> LPIPS: 0.5876 <br> Resolution: 2048x2048
+    <div class="grid">
+
+        <div class="card ref">
+            <img src="results/edit/prompt-1/input_reference.png">
+            <div class="model">Reference Input</div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-1/seedream-v4-5-edit-freepik.png">
-        <div class="model">seedream-v4-5-edit</div>
-        <div class="metrics">
-            Latency: 21.3s <br> CLIP: 0.2625 <br> SSIM: 0.1364 <br> PSNR: 27.96 <br> LPIPS: 0.6042 <br> Resolution: 2048x2048
+        <div class="card">
+            <img src="results/edit/prompt-1/seedream-v4-edit-freepik.png">
+            <div class="model">seedream-v4-edit</div>
+            <div class="metrics">
+                Latency: 18.0s <br> CLIP: 0.2696 <br> SSIM: 0.0771 <br> PSNR: 27.89 <br> LPIPS: 0.5876 <br> Resolution:
+                2048x2048
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-1/seedream-v5-lite-edit-freepik.png">
-        <div class="model">seedream-v5-lite-edit</div>
-        <div class="metrics">
-            Latency: 34.7s <br> CLIP: 0.2563 <br> SSIM: 0.0880 <br> PSNR: 27.94 <br> LPIPS: 0.7879 <br> Resolution: 2048x2048
+
+        <div class="card">
+            <img src="results/edit/prompt-1/seedream-v4-5-edit-freepik.png">
+            <div class="model">seedream-v4-5-edit</div>
+            <div class="metrics">
+                Latency: 21.3s <br> CLIP: 0.2625 <br> SSIM: 0.1364 <br> PSNR: 27.96 <br> LPIPS: 0.6042 <br> Resolution:
+                2048x2048
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-1/flux-kontext-pro-freepik.png">
-        <div class="model">flux-kontext-pro-freepik</div>
-        <div class="metrics">
-            Latency: 11.4s <br> CLIP: 0.2388 <br> SSIM: 0.1477 <br> PSNR: 27.97 <br> LPIPS: 0.4662 <br> Resolution: 1024x1024
+
+        <div class="card">
+            <img src="results/edit/prompt-1/seedream-v5-lite-edit-freepik.png">
+            <div class="model">seedream-v5-lite-edit</div>
+            <div class="metrics">
+                Latency: 34.7s <br> CLIP: 0.2563 <br> SSIM: 0.0880 <br> PSNR: 27.94 <br> LPIPS: 0.7879 <br> Resolution:
+                2048x2048
+            </div>
         </div>
-    </div>
-    
-    <div class="card">
-        <img src="results/edit/prompt-1/higgsfield-ai-soul-reference.png">
-        <div class="model">higgsfield-ai-soul-reference</div>
-        <div class="metrics">
-            Latency: 31.2s <br> CLIP: 0.2941 <br> SSIM: 0.0990 <br> PSNR: 28.01 <br> LPIPS: 0.7983 <br> Resolution: 2048x2048
+
+
+        <div class="card">
+            <img src="results/edit/prompt-1/flux-kontext-pro-freepik.png">
+            <div class="model">flux-kontext-pro-freepik</div>
+            <div class="metrics">
+                Latency: 11.4s <br> CLIP: 0.2388 <br> SSIM: 0.1477 <br> PSNR: 27.97 <br> LPIPS: 0.4662 <br> Resolution:
+                1024x1024
+            </div>
         </div>
-    </div>
 
-</div>
-
-<!-- ================= EDIT PROMPT 2 ================= -->
-<h2>Edit (Prompt 2 - Background Replace)</h2>
-
-<div class="prompt">
-<details>
-<summary>View Prompt</summary>
-Replace the background with a sunset beach scene with soft golden lighting. Match the lighting direction and color temperature on the subject so it looks natural.
-</details>
-</div>
-
-<div class="grid">
-
-    <div class="card ref">
-        <img src="results/edit/prompt-2/input_reference.png">
-        <div class="model">Reference Input</div>
-    </div>
-
-    <div class="card">
-        <img src="results/edit/prompt-2/seedream-v4-edit-freepik.png">
-        <div class="model">seedream-v4-edit</div>
-        <div class="metrics">
-            Latency: 18s <br> CLIP: 0.2711 <br> SSIM: 0.1193 <br> PSNR: 28.01 <br> LPIPS: 0.6469 <br> Resolution: 2048x2048
+        <div class="card">
+            <img src="results/edit/prompt-1/higgsfield-ai-soul-reference.png">
+            <div class="model">higgsfield-ai-soul-reference</div>
+            <div class="metrics">
+                Latency: 31.2s <br> CLIP: 0.2941 <br> SSIM: 0.0990 <br> PSNR: 28.01 <br> LPIPS: 0.7983 <br> Resolution:
+                2048x2048
+            </div>
         </div>
+
     </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-2/seedream-v4-5-edit-freepik.png">
-        <div class="model">seedream-v4-5-edit</div>
-        <div class="metrics">
-            Latency: 28.3s <br> CLIP: 0.2640 <br> SSIM: 0.2033 <br> PSNR: 28.07 <br> LPIPS: 0.4888 <br> Resolution: 2048x2048
+    <!-- ================= EDIT PROMPT 2 ================= -->
+    <h2>Edit (Prompt 2 - Background Replace)</h2>
+
+    <div class="prompt">
+        <details>
+            <summary>View Prompt</summary>
+            Replace the background with a sunset beach scene with soft golden lighting. Match the lighting direction and
+            color temperature on the subject so it looks natural.
+        </details>
+    </div>
+
+    <div class="grid">
+
+        <div class="card ref">
+            <img src="results/edit/prompt-2/input_reference.png">
+            <div class="model">Reference Input</div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-2/seedream-v5-lite-edit-freepik.png">
-        <div class="model">seedream-v5-lite-edit</div>
-        <div class="metrics">
-            Latency: 35.3s <br> CLIP: 0.2880 <br> SSIM: 0.1436 <br> PSNR: 27.98 <br> LPIPS: 0.7719 <br> Resolution: 2048x2048
+        <div class="card">
+            <img src="results/edit/prompt-2/seedream-v4-edit-freepik.png">
+            <div class="model">seedream-v4-edit</div>
+            <div class="metrics">
+                Latency: 18s <br> CLIP: 0.2711 <br> SSIM: 0.1193 <br> PSNR: 28.01 <br> LPIPS: 0.6469 <br> Resolution:
+                2048x2048
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-2/flux-kontext-pro-freepik.png">
-        <div class="model">flux-kontext-pro-freepik</div>
-        <div class="metrics">
-            Latency: 11.2s <br> CLIP: 0.2789 <br> SSIM: 0.1920 <br> PSNR: 27.97 <br> LPIPS: 0.7196 <br> Resolution: 1024x1024
+
+        <div class="card">
+            <img src="results/edit/prompt-2/seedream-v4-5-edit-freepik.png">
+            <div class="model">seedream-v4-5-edit</div>
+            <div class="metrics">
+                Latency: 28.3s <br> CLIP: 0.2640 <br> SSIM: 0.2033 <br> PSNR: 28.07 <br> LPIPS: 0.4888 <br> Resolution:
+                2048x2048
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <img src="results/edit/prompt-2/higgsfield-ai-soul-reference.png">
-        <div class="model">higgsfield-ai-soul-reference</div>
-        <div class="metrics">
-            Latency: 30.4s <br> CLIP: 0.2815 <br> SSIM: 0.1827 <br> PSNR: 28.01 <br> LPIPS: 0.7234 <br> Resolution: 960x1696
+
+        <div class="card">
+            <img src="results/edit/prompt-2/seedream-v5-lite-edit-freepik.png">
+            <div class="model">seedream-v5-lite-edit</div>
+            <div class="metrics">
+                Latency: 35.3s <br> CLIP: 0.2880 <br> SSIM: 0.1436 <br> PSNR: 27.98 <br> LPIPS: 0.7719 <br> Resolution:
+                2048x2048
+            </div>
         </div>
-    </div>
-
-</div>
-
-<!-- ================= VIDEO PROMPT 1 ================= -->
-<h2>Image → Video (Prompt 1)</h2>
-
-<div class="prompt">
-<details>
-<summary>View Prompt</summary>
-A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit, smooth transition, cinematic lighting
-</details>
-</div>
-
-<div class="grid">
 
 
-    
-    <div class="card ref">
-        <img src="results/edit/prompt-2/input_reference.png">
-        <div class="model">Reference Input</div>
-    </div>
-
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/kling-v2-6-pro-freepik.mp4">
-        </video>
-        <div class="model">kling-v2-6-pro-freepik</div>
-        <div class="metrics">
-            Latency: 79.7s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206
+        <div class="card">
+            <img src="results/edit/prompt-2/flux-kontext-pro-freepik.png">
+            <div class="model">flux-kontext-pro-freepik</div>
+            <div class="metrics">
+                Latency: 11.2s <br> CLIP: 0.2789 <br> SSIM: 0.1920 <br> PSNR: 27.97 <br> LPIPS: 0.7196 <br> Resolution:
+                1024x1024
+            </div>
         </div>
-    </div>
 
 
-    
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/kling-v3-pro-freepik.mp4">
-        </video>
-        <div class="model">kling-v3-pro-freepik</div>
-        <div class="metrics">
-            Latency: 98.2s <br> CLIP: 0.3295 <br> Motion: 9.02 <br> Consistency: 0.0998 <br> FirstFrame SSIM: 0.1065 <br> FirstFrame LPIPS: 0.7100
+        <div class="card">
+            <img src="results/edit/prompt-2/higgsfield-ai-soul-reference.png">
+            <div class="model">higgsfield-ai-soul-reference</div>
+            <div class="metrics">
+                Latency: 30.4s <br> CLIP: 0.2815 <br> SSIM: 0.1827 <br> PSNR: 28.01 <br> LPIPS: 0.7234 <br> Resolution:
+                960x1696
+            </div>
         </div>
+
     </div>
 
+    <!-- ================= VIDEO PROMPT 1 ================= -->
+    <h2>Image → Video (Prompt 1)</h2>
 
-    
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/runway-gen4-turbo-freepik.mp4">
-        </video>
-        <div class="model">runway-gen4-turbo-freepik</div>
-        <div class="metrics">
-            Latency: 46s <br> CLIP: 0.2411 <br> Motion: 3.84 <br> Consistency: 0.2067 <br> FirstFrame SSIM: 0.3442 <br> FirstFrame LPIPS: 0.4822
+    <div class="prompt">
+        <details>
+            <summary>View Prompt</summary>
+            A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit,
+            smooth transition, cinematic lighting
+        </details>
+    </div>
+
+    <div class="grid">
+
+
+
+        <div class="card ref">
+            <img src="results/edit/prompt-2/input_reference.png">
+            <div class="model">Reference Input</div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/minimax-hailuo-2-3-1080p-freepik.mp4">
-        </video>
-        <div class="model">minimax-hailuo-2-3-1080p-freepik</div>
-        <div class="metrics">
-            Latency: 167.8s <br> CLIP: 0.3430 <br> Motion: 1.76 <br> Consistency: 0.3622 <br> FirstFrame SSIM: 0.1243 <br> FirstFrame LPIPS: 0.6726
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/kling-v2-6-pro-freepik.mp4">
+            </video>
+            <div class="model">kling-v2-6-pro-freepik</div>
+            <div class="metrics">
+                Latency: 79.7s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530
+                <br> FirstFrame LPIPS: 0.0206
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/ltx-2-pro-freepik.mp4">
-        </video>
-        <div class="model">ltx-2-pro-freepik</div>
-        <div class="metrics">
-            Latency: 87.2s <br> CLIP: 0.2256 <br> Motion: 23.17 <br> Consistency: 0.0414 <br> FirstFrame SSIM: 0.3463 <br> FirstFrame LPIPS: 0.4711
+
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/kling-v3-pro-freepik.mp4">
+            </video>
+            <div class="model">kling-v3-pro-freepik</div>
+            <div class="metrics">
+                Latency: 98.2s <br> CLIP: 0.3295 <br> Motion: 9.02 <br> Consistency: 0.0998 <br> FirstFrame SSIM: 0.1065
+                <br> FirstFrame LPIPS: 0.7100
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/wan-v2-6-1080p-freepik.mp4">
-        </video>
-        <div class="model">wan-v2-6-1080p-freepik</div>
-        <div class="metrics">
-            Latency: 39.3s <br> CLIP: 0.2999 <br> Motion: 6.20 <br> Consistency: 0.1388 <br> FirstFrame SSIM: 0.6214 <br> FirstFrame LPIPS: 0.0991
+
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/runway-gen4-turbo-freepik.mp4">
+            </video>
+            <div class="model">runway-gen4-turbo-freepik</div>
+            <div class="metrics">
+                Latency: 46s <br> CLIP: 0.2411 <br> Motion: 3.84 <br> Consistency: 0.2067 <br> FirstFrame SSIM: 0.3442
+                <br> FirstFrame LPIPS: 0.4822
+            </div>
         </div>
-    </div>
 
-    
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-1/seedance-1-5-pro-1080p-freepik.mp4">
-        </video>
-        <div class="model">seedance-1-5-pro-1080p-freepik</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/minimax-hailuo-2-3-1080p-freepik.mp4">
+            </video>
+            <div class="model">minimax-hailuo-2-3-1080p-freepik</div>
+            <div class="metrics">
+                Latency: 167.8s <br> CLIP: 0.3430 <br> Motion: 1.76 <br> Consistency: 0.3622 <br> FirstFrame SSIM:
+                0.1243 <br> FirstFrame LPIPS: 0.6726
+            </div>
         </div>
-    </div>
 
 
-
-
-
-
-</div>
-
-<!-- ================= VIDEO PROMPT 2 ================= -->
-<h2>Image → Video (Prompt 2)</h2>
-
-<div class="prompt">
-<details>
-<summary>View Prompt</summary>
-A glass of water falling from a table and shattering on the floor in slow motion, realistic physics, detailed water splashes, cinematic lighting
-</details>
-</div>
-
-<div class="grid">
-
-    <div class="card ref">
-        <img src="results/edit/prompt-2/input_reference.png">
-        <div class="model">Reference Input</div>
-    </div>
-
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/ltx-2-pro-freepik.mp4">
+            </video>
+            <div class="model">ltx-2-pro-freepik</div>
+            <div class="metrics">
+                Latency: 87.2s <br> CLIP: 0.2256 <br> Motion: 23.17 <br> Consistency: 0.0414 <br> FirstFrame SSIM:
+                0.3463 <br> FirstFrame LPIPS: 0.4711
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/wan-v2-6-1080p-freepik.mp4">
+            </video>
+            <div class="model">wan-v2-6-1080p-freepik</div>
+            <div class="metrics">
+                Latency: 39.3s <br> CLIP: 0.2999 <br> Motion: 6.20 <br> Consistency: 0.1388 <br> FirstFrame SSIM: 0.6214
+                <br> FirstFrame LPIPS: 0.0991
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-1/seedance-1-5-pro-1080p-freepik.mp4">
+            </video>
+            <div class="model">seedance-1-5-pro-1080p-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
         </div>
+
+
+
+
+
+
     </div>
 
+    <!-- ================= VIDEO PROMPT 2 ================= -->
+    <h2>Image → Video (Prompt 2)</h2>
 
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+    <div class="prompt">
+        <details>
+            <summary>View Prompt</summary>
+            A glass of water falling from a table and shattering on the floor in slow motion, realistic physics,
+            detailed water splashes, cinematic lighting
+        </details>
+    </div>
+
+    <div class="grid">
+
+        <div class="card ref">
+            <img src="results/edit/prompt-2/input_reference.png">
+            <div class="model">Reference Input</div>
         </div>
-    </div>
 
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/kling-v2-6-pro-freepik.mp4">
+            </video>
+            <div class="model">kling-v2-6-pro-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/kling-v3-pro-freepik.mp4">
+            </video>
+            <div class="model">kling-v3-pro-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
         </div>
-    </div>
 
-    <div class="card">
-        <video controls>
-            <source src="results/image-to-video/prompt-2/video1.mp4">
-        </video>
-        <div class="model">model-name</div>
-        <div class="metrics">
-            <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/ltx-2-pro-freepik.mp4">
+            </video>
+            <div class="model">ltx-2-pro-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
         </div>
+
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/minimax-hailuo-2-3-1080p-freepik.mp4">
+            </video>
+            <div class="model">minimax-hailuo-2-3-1080p-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
+        </div>
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/runway-gen-3-fast-freepik.mp4">
+            </video>
+            <div class="model">runway-gen-3-fast-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
+        </div>
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/seedance-1-5-pro-1080p-freepik.mp4">
+            </video>
+            <div class="model">seedance-1-5-pro-1080p-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
+        </div>
+
+        <div class="card">
+            <video controls>
+                <source src="results/image-to-video/prompt-2/wan-v2-6-1080p-freepik.mp4">
+            </video>
+            <div class="model">wan-v2-6-1080p-freepik</div>
+            <div class="metrics">
+                <!-- Latency: 25.3s <br> CLIP: 0.1803 <br> Motion: 9.78 <br> Consistency: 0.0928 <br> FirstFrame SSIM: 0.9530 <br> FirstFrame LPIPS: 0.0206 -->
+            </div>
+        </div>
+
     </div>
 
-</div>
 
 
 
+    <!-- ================= METRICS INTERPRETATION ================= -->
+    <h2>📊 Metrics Interpretation Guide</h2>
 
-<!-- ================= METRICS INTERPRETATION ================= -->
-<h2>📊 Metrics Interpretation Guide</h2>
+    <style>
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+        }
 
-<style>
-.metrics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 15px;
-}
+        .metric-card {
+            background: #1e293b;
+            padding: 14px;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+            transition: 0.3s;
+        }
 
-.metric-card {
-    background: #1e293b;
-    padding: 14px;
-    border-radius: 10px;
-    border-left: 4px solid #38bdf8;
-    transition: 0.3s;
-}
+        .metric-card:hover {
+            transform: scale(1.03);
+        }
 
-.metric-card:hover {
-    transform: scale(1.03);
-}
+        .metric-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
 
-.metric-title {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 6px;
-}
+        .good {
+            border-left-color: #22c55e;
+        }
 
-.good { border-left-color: #22c55e; }     /* green */
-.bad { border-left-color: #ef4444; }      /* red */
-.neutral { border-left-color: #38bdf8; }  /* blue */
+        /* green */
+        .bad {
+            border-left-color: #ef4444;
+        }
 
-.metric-desc {
-    font-size: 12px;
-    color: #cbd5f5;
-    line-height: 1.5;
-}
-</style>
+        /* red */
+        .neutral {
+            border-left-color: #38bdf8;
+        }
 
-<div class="metrics-grid">
+        /* blue */
 
-<div class="metric-card bad">
-<div class="metric-title">⚡ Latency</div>
-<div class="metric-desc">
-Lower is better.<br>
-Measures generation time.<br>
-Fast models are preferred for real-time applications.
-</div>
-</div>
+        .metric-desc {
+            font-size: 12px;
+            color: #cbd5f5;
+            line-height: 1.5;
+        }
+    </style>
 
-<div class="metric-card good">
-<div class="metric-title">🎯 CLIP Score</div>
-<div class="metric-desc">
-Higher is better (0–1).<br>
-Measures how well output matches the prompt.<br>
-Higher = better semantic understanding.
-</div>
-</div>
+    <div class="metrics-grid">
 
-<div class="metric-card good">
-<div class="metric-title">✨ Aesthetic Score</div>
-<div class="metric-desc">
-Higher is better.<br>
-Represents visual appeal and realism.<br>
-Higher = more visually pleasing output.
-</div>
-</div>
+        <div class="metric-card bad">
+            <div class="metric-title">⚡ Latency</div>
+            <div class="metric-desc">
+                Lower is better.<br>
+                Measures generation time.<br>
+                Fast models are preferred for real-time applications.
+            </div>
+        </div>
 
-<div class="metric-card good">
-<div class="metric-title">🧩 SSIM</div>
-<div class="metric-desc">
-Higher is better (0–1).<br>
-Measures structure similarity with reference image.<br>
-Higher = better preservation.
-</div>
-</div>
+        <div class="metric-card good">
+            <div class="metric-title">🎯 CLIP Score</div>
+            <div class="metric-desc">
+                Higher is better (0–1).<br>
+                Measures how well output matches the prompt.<br>
+                Higher = better semantic understanding.
+            </div>
+        </div>
 
-<div class="metric-card good">
-<div class="metric-title">📈 PSNR</div>
-<div class="metric-desc">
-Higher is better.<br>
-Measures pixel-level reconstruction quality.<br>
-Used for fine-grained comparison.
-</div>
-</div>
+        <div class="metric-card good">
+            <div class="metric-title">✨ Aesthetic Score</div>
+            <div class="metric-desc">
+                Higher is better.<br>
+                Represents visual appeal and realism.<br>
+                Higher = more visually pleasing output.
+            </div>
+        </div>
 
-<div class="metric-card bad">
-<div class="metric-title">🧠 LPIPS</div>
-<div class="metric-desc">
-Lower is better.<br>
-Measures perceptual difference.<br>
-Lower = more visually similar.
-</div>
-</div>
+        <div class="metric-card good">
+            <div class="metric-title">🧩 SSIM</div>
+            <div class="metric-desc">
+                Higher is better (0–1).<br>
+                Measures structure similarity with reference image.<br>
+                Higher = better preservation.
+            </div>
+        </div>
 
-<div class="metric-card neutral">
-<div class="metric-title">🎬 Motion Score</div>
-<div class="metric-desc">
-Measures movement between frames.<br>
-Moderate = natural motion.<br>
-Very high = unstable video.
-</div>
-</div>
+        <div class="metric-card good">
+            <div class="metric-title">📈 PSNR</div>
+            <div class="metric-desc">
+                Higher is better.<br>
+                Measures pixel-level reconstruction quality.<br>
+                Used for fine-grained comparison.
+            </div>
+        </div>
 
-<div class="metric-card good">
-<div class="metric-title">🔄 Consistency</div>
-<div class="metric-desc">
-Higher is better.<br>
-Measures temporal stability.<br>
-Higher = smoother video.
-</div>
-</div>
+        <div class="metric-card bad">
+            <div class="metric-title">🧠 LPIPS</div>
+            <div class="metric-desc">
+                Lower is better.<br>
+                Measures perceptual difference.<br>
+                Lower = more visually similar.
+            </div>
+        </div>
 
-<div class="metric-card good">
-<div class="metric-title">🖼 First Frame SSIM</div>
-<div class="metric-desc">
-Higher is better.<br>
-Checks identity preservation.<br>
-Higher = closer to input image.
-</div>
-</div>
+        <div class="metric-card neutral">
+            <div class="metric-title">🎬 Motion Score</div>
+            <div class="metric-desc">
+                Measures movement between frames.<br>
+                Moderate = natural motion.<br>
+                Very high = unstable video.
+            </div>
+        </div>
 
-<div class="metric-card bad">
-<div class="metric-title">🧪 First Frame LPIPS</div>
-<div class="metric-desc">
-Lower is better.<br>
-Measures perceptual similarity to input.<br>
-Lower = better match.
-</div>
-</div>
+        <div class="metric-card good">
+            <div class="metric-title">🔄 Consistency</div>
+            <div class="metric-desc">
+                Higher is better.<br>
+                Measures temporal stability.<br>
+                Higher = smoother video.
+            </div>
+        </div>
 
-<div class="metric-card neutral">
-<div class="metric-title">📏 Resolution</div>
-<div class="metric-desc">
-Image size (e.g., 1024×1024).<br>
-Higher = more detail.<br>
-Does not always mean better quality.
-</div>
-</div>
+        <div class="metric-card good">
+            <div class="metric-title">🖼 First Frame SSIM</div>
+            <div class="metric-desc">
+                Higher is better.<br>
+                Checks identity preservation.<br>
+                Higher = closer to input image.
+            </div>
+        </div>
 
-</div>
+        <div class="metric-card bad">
+            <div class="metric-title">🧪 First Frame LPIPS</div>
+            <div class="metric-desc">
+                Lower is better.<br>
+                Measures perceptual similarity to input.<br>
+                Lower = better match.
+            </div>
+        </div>
 
-<br>
+        <div class="metric-card neutral">
+            <div class="metric-title">📏 Resolution</div>
+            <div class="metric-desc">
+                Image size (e.g., 1024×1024).<br>
+                Higher = more detail.<br>
+                Does not always mean better quality.
+            </div>
+        </div>
 
-<div class="prompt" style="border-left:4px solid #22c55e;">
-<b>🏆 How to Choose the Best Model:</b><br><br>
+    </div>
 
-✔ High CLIP → follows prompt<br>
-✔ High Aesthetic → looks good<br>
-✔ High SSIM + Low LPIPS → best edits<br>
-✔ Smooth Motion + High Consistency → best videos<br>
+    <br>
 
-</div>
+    <div class="prompt" style="border-left:4px solid #22c55e;">
+        <b>🏆 How to Choose the Best Model:</b><br><br>
 
+        ✔ High CLIP → follows prompt<br>
+        ✔ High Aesthetic → looks good<br>
+        ✔ High SSIM + Low LPIPS → best edits<br>
+        ✔ Smooth Motion + High Consistency → best videos<br>
 
-
-<!-- ================= REFERENCES ================= -->
-<h2>📚 Metrics References</h2>
-
-<style>
-.refs {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 15px;
-}
-
-.ref-card {
-    background: #1e293b;
-    padding: 14px;
-    border-radius: 10px;
-    border-left: 4px solid #38bdf8;
-    transition: 0.3s;
-}
-
-.ref-card:hover {
-    transform: scale(1.03);
-}
-
-.ref-title {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #38bdf8;
-}
-
-.ref-desc {
-    font-size: 12px;
-    color: #cbd5f5;
-    line-height: 1.5;
-}
-
-.ref-link {
-    font-size: 11px;
-    margin-top: 6px;
-}
-
-.ref-link a {
-    color: #22c55e;
-    text-decoration: none;
-}
-</style>
-
-<div class="refs">
-
-<div class="ref-card">
-<div class="ref-title">CLIP Score</div>
-<div class="ref-desc">
-Radford et al. (2021) — Learning Transferable Visual Models From Natural Language Supervision
-</div>
-<div class="ref-link">
-<a href="https://arxiv.org/abs/2103.00020" target="_blank">View Paper</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">LPIPS</div>
-<div class="ref-desc">
-Zhang et al. (2018) — The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
-</div>
-<div class="ref-link">
-<a href="https://arxiv.org/abs/1801.03924" target="_blank">View Paper</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">SSIM</div>
-<div class="ref-desc">
-Wang et al. (2004) — Image Quality Assessment: From Error Visibility to Structural Similarity
-</div>
-<div class="ref-link">
-<a href="https://ieeexplore.ieee.org/document/1284395" target="_blank">View Paper</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">PSNR</div>
-<div class="ref-desc">
-Standard signal processing metric for image reconstruction quality
-</div>
-<div class="ref-link">
-<a href="https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio" target="_blank">Learn More</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">Aesthetic Score</div>
-<div class="ref-desc">
-LAION Aesthetic Predictor — trained on human preference datasets
-</div>
-<div class="ref-link">
-<a href="https://github.com/christophschuhmann/improved-aesthetic-predictor" target="_blank">View Repo</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">Video Motion & Consistency</div>
-<div class="ref-desc">
-Fréchet Video Motion Distance (FVMD) — a metric designed to evaluate motion consistency in generated videos using motion features and Fréchet distance.
-</div>
-<div class="ref-link">
-<a href="https://arxiv.org/abs/2407.16124" target="_blank">View Paper</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">Temporal Consistency</div>
-<div class="ref-desc">
-Temporally Consistent Transformers (TECO) — evaluates long-term temporal coherence in generated videos.
-</div>
-<div class="ref-link">
-<a href="https://arxiv.org/abs/2210.02396" target="_blank">View Paper</a>
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">Resolution</div>
-<div class="ref-desc">
-Basic image property indicating pixel dimensions (width × height)
-</div>
-</div>
-
-<div class="ref-card">
-<div class="ref-title">Latency</div>
-<div class="ref-desc">
-System performance metric measuring time taken to generate output
-</div>
-</div>
-
-</div>
+    </div>
 
 
 
-<!-- ================= FOOTER ================= -->
-<footer style="
+    <!-- ================= REFERENCES ================= -->
+    <h2>📚 Metrics References</h2>
+
+    <style>
+        .refs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .ref-card {
+            background: #1e293b;
+            padding: 14px;
+            border-radius: 10px;
+            border-left: 4px solid #38bdf8;
+            transition: 0.3s;
+        }
+
+        .ref-card:hover {
+            transform: scale(1.03);
+        }
+
+        .ref-title {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #38bdf8;
+        }
+
+        .ref-desc {
+            font-size: 12px;
+            color: #cbd5f5;
+            line-height: 1.5;
+        }
+
+        .ref-link {
+            font-size: 11px;
+            margin-top: 6px;
+        }
+
+        .ref-link a {
+            color: #22c55e;
+            text-decoration: none;
+        }
+    </style>
+
+    <div class="refs">
+
+        <div class="ref-card">
+            <div class="ref-title">CLIP Score</div>
+            <div class="ref-desc">
+                Radford et al. (2021) — Learning Transferable Visual Models From Natural Language Supervision
+            </div>
+            <div class="ref-link">
+                <a href="https://arxiv.org/abs/2103.00020" target="_blank">View Paper</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">LPIPS</div>
+            <div class="ref-desc">
+                Zhang et al. (2018) — The Unreasonable Effectiveness of Deep Features as a Perceptual Metric
+            </div>
+            <div class="ref-link">
+                <a href="https://arxiv.org/abs/1801.03924" target="_blank">View Paper</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">SSIM</div>
+            <div class="ref-desc">
+                Wang et al. (2004) — Image Quality Assessment: From Error Visibility to Structural Similarity
+            </div>
+            <div class="ref-link">
+                <a href="https://ieeexplore.ieee.org/document/1284395" target="_blank">View Paper</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">PSNR</div>
+            <div class="ref-desc">
+                Standard signal processing metric for image reconstruction quality
+            </div>
+            <div class="ref-link">
+                <a href="https://en.wikipedia.org/wiki/Peak_signal-to-noise_ratio" target="_blank">Learn More</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">Aesthetic Score</div>
+            <div class="ref-desc">
+                LAION Aesthetic Predictor — trained on human preference datasets
+            </div>
+            <div class="ref-link">
+                <a href="https://github.com/christophschuhmann/improved-aesthetic-predictor" target="_blank">View
+                    Repo</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">Video Motion & Consistency</div>
+            <div class="ref-desc">
+                Fréchet Video Motion Distance (FVMD) — a metric designed to evaluate motion consistency in generated
+                videos using motion features and Fréchet distance.
+            </div>
+            <div class="ref-link">
+                <a href="https://arxiv.org/abs/2407.16124" target="_blank">View Paper</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">Temporal Consistency</div>
+            <div class="ref-desc">
+                Temporally Consistent Transformers (TECO) — evaluates long-term temporal coherence in generated videos.
+            </div>
+            <div class="ref-link">
+                <a href="https://arxiv.org/abs/2210.02396" target="_blank">View Paper</a>
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">Resolution</div>
+            <div class="ref-desc">
+                Basic image property indicating pixel dimensions (width × height)
+            </div>
+        </div>
+
+        <div class="ref-card">
+            <div class="ref-title">Latency</div>
+            <div class="ref-desc">
+                System performance metric measuring time taken to generate output
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer style="
     margin-top:50px;
     padding:15px;
     text-align:center;
@@ -779,8 +820,9 @@ System performance metric measuring time taken to generate output
     font-size:13px;
     border-top:1px solid #334155;
 ">
-    Developed by <span style="color:#38bdf8; font-weight:600;">Eko-Eko-AI/ML-Team</span>
-</footer>
+        Developed by <span style="color:#38bdf8; font-weight:600;">Eko-Eko-AI/ML-Team</span>
+    </footer>
 
 </body>
+
 </html>
