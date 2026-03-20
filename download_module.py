@@ -44,9 +44,10 @@ def download_and_log(url, save_path, latency, model_name, txt_file_path):
 
 download_and_log(
 
+
     url="",
-    save_path="results/image-to-video/prompt-1/seedance-1-5-pro-1080p-freepik.mp4",  # 👈 SAVE AS MP4
-    latency=39309.96   ,  # 👈 IN MILLISECONDS
+    save_path="results/image-to-video/prompt-2/seedance-1-5-pro-1080p-freepik.mp4",  # 👈 SAVE AS MP4
+    latency= 193591.03,  # 👈 IN MILLISECONDS
     model_name="seedance-1-5-pro-1080p-freepik",  # 👈 MODEL NAME
     txt_file_path="C:/Kanan_Pandit_Rezolve_Ai/WORK-eko-eko/final-model-comp-19Mar/models_wise_data.txt"   # 👈 SAME FILE FOR ALL
 )

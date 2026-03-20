@@ -10,10 +10,10 @@ from skimage.metrics import structural_similarity as ssim
 
 # -------- CONFIG --------
 BASE_FOLDER = "results/image-to-video/prompt-1"
-OUTPUT_FILE = "metrics_results/video_metrics_prompt-1.txt"
+OUTPUT_FILE = "metrics_results/sample.txt"
 REF_IMAGE_PATH = os.path.join(BASE_FOLDER, "input_reference.png")
 
-PROMPT = "A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit, smooth transition, cinematic lighting"
+PROMPT = " A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit, smooth transition, cinematic lighting"
 
 os.makedirs("metrics_results", exist_ok=True)
 

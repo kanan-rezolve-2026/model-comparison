@@ -5,3 +5,4 @@ ltx-2-pro-freepik | ltx-2-pro-freepik.mp4 | 0.2256 | 23.17 | 0.0414 | 0.3463 | 0
 minimax-hailuo-2-3-1080p-freepik | minimax-hailuo-2-3-1080p-freepik.mp4 | 0.3430 | 1.76 | 0.3622 | 0.1243 | 0.6726
 runway-gen4-turbo-freepik | runway-gen4-turbo-freepik.mp4 | 0.2411 | 3.84 | 0.2067 | 0.3442 | 0.4822
 wan-v2-6-1080p-freepik | wan-v2-6-1080p-freepik.mp4 | 0.2999 | 6.20 | 0.1388 | 0.6214 | 0.0991
+seedance-1-5-pro-1080p-freepik | seedance-1-5-pro-1080p-freepik.mp4 | 0.3111 | 13.41 | 0.0694 | 0.0651 | 0.7294

@@ -40,7 +40,7 @@ higgsfield-ai-soul-reference | higgsfield-ai-soul-reference.png | 30451.25 sec
 
 
 
-Video (Generation)(promt-1): 
+Video (Generation)(prompt-1): 
  A woman sitting at a café, then standing up and walking away, continuous shot, consistent face and outfit, smooth transition, cinematic lighting
 
 
@@ -49,7 +49,19 @@ kling-v3-pro-freepik | kling-v3-pro-freepik.mp4 | 98206.1 sec
 runway-gen4-turbo-freepik | runway-gen4-turbo-freepik.mp4 | 46037.87 sec
 minimax-hailuo-2-3-1080p-freepik | minimax-hailuo-2-3-1080p-freepik.mp4 | 167787.88 sec
 ltx-2-pro-freepik | ltx-2-pro-freepik.mp4 | 87213.74 sec
-wan-v2-6-1080p-freepik | wan-v2-6-1080p-freepik.mp4 | 39309.96 sec
+wan-v2-6-1080p-freepik | wan-v2-6-1080p-freepik.mp4 | 39309.96 
+secseedance-1-5-pro-1080p-freepik | seedance-1-5-pro-1080p-freepik.mp4 | 105860.04  sec 
 
-##one last model due for this  seedance-1-5-pro-1080p----note
-next task move to promt 2 for video 
+
+
+Video (Generation)(prompt-2): 
+
+A glass of water falling from a table and shattering on the floor in slow motion, realistic physics, detailed water splashes, cinematic lighting
+
+kling-v2-6-pro-freepik | kling-v2-6-pro-freepik.mp4 | 72893.86 sec
+kling-v3-pro-freepik | kling-v3-pro-freepik.mp4 | 101910.96 sec
+runway-gen4-turbo-freepik | runway-gen4-turbo-freepik.mp4 | 40817.16 sec
+minimax-hailuo-2-3-1080p-freepik | minimax-hailuo-2-3-1080p-freepik.mp4 | 159008.72 sec
+ltx-2-pro-freepik | ltx-2-pro-freepik.mp4 | 86655.31 sec
+wan-v2-6-1080p-freepik | wan-v2-6-1080p-freepik.mp4 | 101659.14 sec
+seedance-1-5-pro-1080p-freepik | seedance-1-5-pro-1080p-freepik.mp4 | 193591.03 sec
